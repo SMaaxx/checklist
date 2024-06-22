@@ -1,0 +1,98 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #8ea0dd, #8e6ad3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-width: 703px;
+  height: 60px;
+  padding: 16px 18px 15px 22px;
+  background-color: #3579F5;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.title {
+  padding: 0 10px;
+  border-radius: 40px;
+  background: #2364db;
+
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.progress {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.next {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.button {
+  border-radius: 6px;
+  padding: 10px 32px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+
+  color: rgb(71, 119, 237);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.progressButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttonBar {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 743px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  width: 63px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.progress {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 49%;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.circle {
+  width: 60px; height: 60px;
+  fill: none;
+  stroke-dashoffset: 186;
+  stroke-dasharray: 186;
+
+  :nth-child(1) {
+    cx: 30;
+    cy: 30;
+    r: 29.5;
+    stroke-dashoffset: 0;
+    stroke: #FFFFFF;
+    opacity: 0.5;
+    stroke-width: 1px;
+  }
+
+  :nth-child(2) {
+    cx: 30;
+    cy: 30;
+    r: 29.5;
+    stroke-dashoffset: calc(186 - (186 * var(--percent) / 100));
+    stroke: #FFFFFF;
+    stroke-width: 2;
+  }
+}
